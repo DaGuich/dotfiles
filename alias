@@ -1,0 +1,18 @@
+alias ll='ls -la | less'
+alias l.='ls -d .* --color=auto'
+alias ls='ls --color=auto'
+
+if [ $UID -ne 0]; then
+    alias install='sudo apt-get install'
+    alias update='sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get -y autoremove'
+fi
+
+alias mkdir='mkdir -pv'
+alias diff='colordiff'
+
+alias ports='nestat -tulanp'
+
+alias reboot='sudo /sbin/reboot'
+alias poweroff='sudo /sbin/poweroff'
+alias halt='sudo /sbin/halt'
+alias shutdown='sudo /sbin/shutdown'
